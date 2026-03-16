@@ -1,0 +1,34 @@
+<!-- This file is injected via JavaScript. Not a full HTML page. -->
+
+
+<div class="Nav_bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Our Products</a>
+
+        <button id="contact_button"> Contact Us </button>
+        <div id="contact_form">
+            <button id="close_form" type="button" class="close-btn">×</button>
+            <h2>Contact Form</h2>
+
+            <form action="https://formspree.io/f/mqebjony" method="POST">
+
+                <div class="field">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" required>
+                </div>
+
+                <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+                </div>
+
+                <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>

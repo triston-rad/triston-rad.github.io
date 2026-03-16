@@ -1,0 +1,281 @@
+:root {
+  --primary-color: rgb(89, 136, 231);
+  --secondary-color: white;
+  --border-radius: 20px;
+  --background-image: url("Background image.png");
+  --text-background-color: rgba(0, 0, 0, 0.7);
+  
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-image: 
+    linear-gradient(rgba(5, 89, 206, 0.5), rgba(5, 89, 206, 0.5)),
+    var(--background-image);
+    
+   
+
+
+    font-family: sans-serif;
+
+    margin: 5%;
+    margin-top: 2%;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+}
+
+#contact_button{
+    text-decoration: none;
+    font-size: large;
+
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.Title{
+    display: flex;
+    min-width: max-content;
+    align-content: center;
+    align-self: center;
+    margin: 4%;
+ 
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+    }
+
+.Nav_bar{
+    display: flex;
+    align-items: center;    
+    justify-content: space-evenly;
+    border-radius: var(--border-radius);
+
+
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin: 10px;
+    
+    
+}
+
+.about_text{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 40px;
+     
+
+    align-items: center;
+
+    border-radius: var(--border-radius);
+    background-color: var(--text-background-color);
+
+    min-height: 500px;
+    padding: 30px;
+    font-size: x-large;
+    margin: 10px;
+
+    
+}
+
+#contact_form{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius);
+
+    background-color: var(--primary-color);
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+}
+
+#contact_form h2{
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+#contact_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field textarea {
+  padding: 30px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+#contact_form button {
+    padding: 15px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#contact_form .close-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;          /* usually top-right for an X */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: var(--border-radius);
+  border: 1px solid black;
+
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+
+  background: var(--secondary-color);
+}
+
+.about_text_long{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+.imgbox{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+}
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle{
+    color: white;
+    display: flex;
+    margin: 10px;
+    margin-top: 30px;
+    background-color: var(--text-background-color);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    
+    min-height: fit-content;
+    max-width: 9000px;
+
+
+   justify-content: center;
+   align-self: center;
+
+   font-size: small;
+    text-align: center;
+}
+
+.product_example{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 100px;
+    background-color: var(--text-background-color);
+    min-height: 500px;
+    padding: 30px;
+    font-size: x-large;
+    margin: 40px;
+    margin-top: 80px;
+}
+
+.project_title{
+    font-size: xx-large;
+    min-width: max-content;
+    margin: 10px;
+    color: white;
+}
+.product_subtitle{
+    font-size: x-large;
+    margin: 10px;
+        color: white;
+
+}
+
+.product_descriptionAndImage{
+    display:flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: transparent;
+    gap: 40px;
+    font-size: larger;
+    text-align: center;
+    line-height: 5vh;
+    border-radius: var(--border-radius);
+    color: white;
+
+
+
+}
+.productboxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+
+}
+
+#p1 .imgbox{
+    border-radius: 0;
+}
+
+#frst_page_subtitle{
+    align-self: left;
+    width: 550px;
+    background-color: rgba(21, 134, 255);
+}
+#fpspara{
+    margin: 10px;
+    text-align: left;
+}
+
+#firstp_big{
+    font-size: 50px;
+    min-width: 10px;
+    line-height: 65px;
+}
+
